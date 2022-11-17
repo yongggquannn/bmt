@@ -1,5 +1,5 @@
 <template>
-  <Tutorial />
+  <div class="text-[#FF5733]">hello</div>
 </template>
 
 <script>
