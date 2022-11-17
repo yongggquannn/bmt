@@ -1,18 +1,18 @@
 <template>
   <div>
-    <!-- <h1 class="text-3xl mb-4">Question Extra</h1> -->
-    <!-- Qn: Use v-for directive to render a list of items based on a given array. -->
-    <!-- Display them in cards form. (Refer to the image in the assets folder) -->
-    <!-- There are missing css styling too. -->
-    <div class="card-container card-content">
-      <div v-if="item.image === ''">
-        <h3>{{ item.title1 }}</h3>
+    <div class="card-container p-[20px]">
+      <div v-if="item.image === ''" class="bg-neutral-500">
+        <h3 class="bg-grey">{{ item.title1 }}</h3>
       </div>
-      <div v-else class=""></div>
+      <div v-else class="bg-no-repeat bg-contain">
+        <img :src="item.image" />
+      </div>
       <div>
         <h3 class="card-title">{{ item.title2 }}</h3>
-        <p>{{ item.description }}</p>
-        <button>Find out more</button>
+        <p class="mb-5">{{ item.description }}</p>
+        <button class="bg-[#6245F4] text-white p-3 rounded-xl">
+          Find out more
+        </button>
       </div>
     </div>
   </div>
