@@ -1,24 +1,24 @@
 <template>
   <div>
-    <!-- <h1 class="text-3xl m-10 mb-4 font-bold">Happenings</h1>
+    <h1 class="text-3xl m-10 mb-4 font-bold">Happenings</h1>
     <p class="ml-10 mb-7">
       Stay in the know on the latest happenings & buzz in church!
-    </p> -->
+    </p>
 
     <!-- ############# PART 2: PROPS & DATA!! ############## -->
     <!-- ###   Create your card using the 'item' below   ### -->
     <!-- ###   Use the given CSS or create your own :)   ### -->
     <!-- ################################################### -->
-    <!-- <div class="max-w-[1440px] flex flex-wrap justify-center"> -->
-    <!-- <Card :item="item" /> -->
+    <div class="max-w-[1440px] flex flex-wrap justify-center">
+      <Card :item="item" />
 
-    <!-- ############# PART 3: VUE DIRECTIVES!! ############## -->
-    <!-- ###          Edit your Card component to          ### -->
-    <!-- ###      create a list of cards using 'items'     ### -->
-    <!-- ##################################################### -->
+      <!-- ############# PART 3: VUE DIRECTIVES!! ############## -->
+      <!-- ###          Edit your Card component to          ### -->
+      <!-- ###      create a list of cards using 'items'     ### -->
+      <!-- ##################################################### -->
 
-    <!-- <Card v-for="item in items" :key="item.id" :item="item" class="mb-5" />
-    </div> -->
+      <!-- <Card v-for="item in items" :key="item.id" :item="item" class="mb-5" /> -->
+    </div>
   </div>
 </template>
 
