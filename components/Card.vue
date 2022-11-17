@@ -1,14 +1,22 @@
+<!-- ##### FOR TESTING! WON'T BE INCLUDED DURING LESSON -->
 <template>
   <div>
-    <div class="card-container p-[20px]">
-      <div v-if="item.image === ''" class="bg-neutral-500">
-        <h3 class="bg-grey">{{ item.title1 }}</h3>
+    <div class="w-[300px] mr-[24px] shadow-xl rounded-xl overflow-hidden">
+      <!-- PART 3: VUE DIRECTIVES!! -->
+
+      <!-- <div v-if="item.image === ''" class="h-[180px] bg-[#D3D8DE] text-center">
+        <h3 class="text-2xl pt-[60px] px-5 font-bold">{{ item.title1 }}</h3>
       </div>
-      <div v-else class="bg-no-repeat bg-contain">
-        <img :src="item.image" />
+      <div v-else> -->
+      <!-- NEED TO REWORK IMG CODE, IMG DOESN'T APPEAR -->
+      <!-- <img class="" :src="item.image" />
+      </div> -->
+
+      <div class="h-[180px] bg-[#D3D8DE] text-center">
+        <h3 class="text-2xl pt-[60px] px-5 font-bold">{{ item.title1 }}</h3>
       </div>
-      <div>
-        <h3 class="card-title">{{ item.title2 }}</h3>
+      <div class="p-[20px]">
+        <h3 class="mb-5 font-bold">{{ item.title2 }}</h3>
         <p class="mb-5">{{ item.description }}</p>
         <button class="bg-[#6245F4] text-white p-3 rounded-xl">
           Find out more
@@ -21,67 +29,25 @@
 <script>
 export default {
   name: 'CardDefault',
-  methods: {
-    header(color) {
-      let stylename = 'background-color: '
-      stylename += color
-      return stylename
-    },
-  },
+  // methods: {
+  //   header(color) {
+  //     let stylename = 'background-color: '
+  //     stylename += color
+  //     return stylename
+  //   },
+  // },
   props: {
     item: {
       type: Object,
       required: true,
     },
   },
-  // data() {
-  //   return {
-  //     items: [
-  //       {
-  //         title: 'Trousers',
-  //         id: 1,
-  //         description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum',
-  //         color: '#75C2EC',
-  //       },
-  //       {
-  //         title: 'Shirt',
-  //         id: 2,
-  //         description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum',
-  //         color: '#F6C42E',
-  //       },
-  //       {
-  //         title: 'Coat',
-  //         id: 3,
-  //         description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum',
-  //         color: '#007C00',
-  //       },
-  //       {
-  //         title: 'Dress',
-  //         id: 4,
-  //         description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum',
-  //         color: '#75C2EC',
-  //       },
-  //       {
-  //         title: 'Blouse',
-  //         id: 5,
-  //         description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum',
-  //         color: '#F6C42E',
-  //       },
-  //       {
-  //         title: 'Sock',
-  //         id: 6,
-  //         description: 'Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum',
-  //         color: '#007C00',
-  //       },
-  //     ],
-  //   }
-  // },
 }
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-.card-container {
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+/* .card-container {
   font-family: 'Roboto', sans-serif;
   filter: drop-shadow(0px 1px 25px rgba(0, 0, 0, 0.25));
   width: 300px;
@@ -89,23 +55,23 @@ export default {
   border: 0.5px solid rgba(0, 0, 0, 0.25);
   margin-right: 24px;
   margin-bottom: 48.5px;
-}
-
+} */
+/* 
 .card-image {
   height: 200px;
   width: 100%;
-  /* border-top-left-radius: ...  */
-  /* border-top-right-radius: ...  */
-  /* display: ... */
-  /* justify-content: ... 
-        /* align-items: ... */
+  border-top-left-radius: ... 
+  border-top-right-radius: ... 
+  display: ...
+  justify-content: ... 
+  align-items: ...
   color: #fff;
   font-size: 5rem;
-}
+} */
 
-.card-content {
+/* .card-content {
   padding: 20px 24px;
-}
+} */
 
 .cards-section {
   display: flex;
