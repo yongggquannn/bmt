@@ -84,19 +84,3 @@ export default {
   },
 }
 </script>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-.cards-section {
-  display: flex;
-  /* flex-direction: ... */
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 1440px;
-  /* padding: 0 156px; */
-  /* margin: auto; */
-  border: 2px;
-  border-color: black;
-}
-</style>
