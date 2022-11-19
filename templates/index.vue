@@ -38,7 +38,6 @@ export default {
   data() {
     return {
       item: {
-        id: '1',
         title1: 'Connect a Youth #HOGC21',
         title2: 'Connect a youth',
         description: 'Bringing a youth? Let us know! We’re here to help!',

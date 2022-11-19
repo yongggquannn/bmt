@@ -4,6 +4,14 @@
       <div class="h-[180px] bg-[#D3D8DE] text-center">
         <h3 class="text-2xl pt-[60px] px-5 font-bold"></h3>
       </div>
+
+      <!-- ############# PART 3: HINT.. You'll need this! ############# -->
+      <!-- <img
+        class="h-[180px] w-full"
+        :src="require(`~assets/images/${hogc21}.png`)"
+      /> -->
+      <!-- ############################################################ -->
+
       <div class="p-[20px]">
         <h3 class="mb-5 font-bold"></h3>
         <p class="mb-5"></p>
