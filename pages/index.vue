@@ -9,7 +9,7 @@
       <!-- ##################################################### -->
 
       <img class="mr-5" src="??" />
-      <h3 class="text-2xl font-bold">HOGC One</h3>
+      <h3 class="test text-2xl font-bold">HOGC One</h3>
     </div>
     <h1 class="text-3xl m-10 mb-4 font-bold">Happenings</h1>
     <p class="ml-10 mb-7">
@@ -38,13 +38,7 @@ export default {
   name: 'IndexPage',
   data() {
     return {
-      item: {
-        id: '1',
-        title1: 'Connect a Youth #HOGC21',
-        title2: 'Connect a youth',
-        description: 'Bringing a youth? Let us know! We’re here to help!',
-        image: '',
-      },
+      items: [],
     }
   },
 }
