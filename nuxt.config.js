@@ -37,8 +37,25 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [],
+  modules: ['@nuxtjs/axios'],
 
+  axios: {
+    // extra config e.g
+    BaseURL: 'https://07e18565-984e-4fc5-a2fc-d4b48c2db778.mock.pstmn.io',
+  },
+
+  publicRuntimeConfig: {
+    axios: {
+      browserBaseURL:
+        'https://07e18565-984e-4fc5-a2fc-d4b48c2db778.mock.pstmn.io',
+    },
+  },
+
+  privateRuntimeConfig: {
+    axios: {
+      baseURL: 'https://07e18565-984e-4fc5-a2fc-d4b48c2db778.mock.pstmn.io',
+    },
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: {
