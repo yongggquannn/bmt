@@ -27,6 +27,12 @@ import Card from '~/components/Card.vue'
 export default {
   name: 'IndexPage',
   component: { Card },
+  computed: {
+    titleCaps() {
+      this.item.title1 = this.item.title1.toUpperCase()
+      return item
+    },
+  },
   data() {
     return {
       item: {
