@@ -6,10 +6,12 @@
       </div>
 
       <!-- ############# PART 3: HINT.. You'll need this! ############# -->
-      <!-- <img
-        class="h-[180px] w-full"
-        :src="require(`~assets/images/${hogc21}.png`)"
-      /> -->
+      <!-- <div class="h-[180px]">
+        <img
+          class="h-[180px] w-full"
+          :src="require(`~assets/images/${item.image}.png`)"
+        />
+      </div> -->
       <!-- ############################################################ -->
 
       <div class="p-[20px]">
