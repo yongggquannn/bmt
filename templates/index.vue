@@ -8,7 +8,8 @@
       <!-- ###      and add the file path in the img tag     ### -->
       <!-- ##################################################### -->
 
-      <img class="mr-5" src="??" />
+      <!-- <img class="mr-5" src="??" /> -->
+
       <h3 class="text-2xl font-bold">HOGC One</h3>
     </div>
     <h1 class="text-3xl m-10 mb-4 font-bold">Happenings</h1>
@@ -33,7 +34,11 @@
 </template>
 
 <script>
+// PART 2 Hint: Add import here!
+
 export default {
+  // PART 2 Hint: Add component here!
+
   name: 'IndexPage',
   data() {
     return {

@@ -1,6 +1,11 @@
 <template>
   <div>
     <div class="w-[300px] mr-[24px] shadow-xl rounded-xl overflow-hidden">
+      <!-- #################################################################### -->
+      <!-- ###           PART 2: HINT.. Fill in the empty headers           ### -->
+      <!-- ###            and paragraph with the prop attributes            ### -->
+      <!-- #################################################################### -->
+
       <div class="h-[180px] bg-[#D3D8DE] text-center">
         <h3 class="text-2xl pt-[60px] px-5 font-bold"></h3>
       </div>
@@ -28,7 +33,6 @@
 <script>
 export default {
   name: 'CardDefault',
-
-  // Hint: Add props here!
+  // PART 2 Hint: Add props here!
 }
 </script>
