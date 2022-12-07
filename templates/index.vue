@@ -1,19 +1,17 @@
 <template>
   <div>
-    <div
-      class="flex bg-gradient-to-r from-[#FFE543] to-[#FFCD19] p-7 pl-10 mb-7"
-    >
+    <div class="top-banner">
       <!-- ############# PART 1: PROJ STRUCTURE!! ############## -->
       <!-- ###      Add in HOGC Logo into assets folder,     ### -->
       <!-- ###      and add the file path in the img tag     ### -->
       <!-- ##################################################### -->
 
-      <!-- <img class="mr-5" src="??" /> -->
+      <!-- <img class="logo" src="??" /> -->
 
-      <h3 class="text-2xl font-bold">HOGC One</h3>
+      <h3 class="banner-title">HOGC One</h3>
     </div>
-    <h1 class="text-3xl m-10 mb-4 font-bold">Happenings</h1>
-    <p class="ml-10 mb-7">
+    <h1 class="title">Happenings</h1>
+    <p class="desc">
       Stay in the know on the latest happenings & buzz in church!
     </p>
 
@@ -22,7 +20,7 @@
     <!-- ###   Use the given CSS or create your own :)   ### -->
     <!-- ################################################### -->
 
-    <div class="max-w-[1440px] flex flex-wrap justify-center">
+    <div class="cards-container">
       <!-- Add Card component here!  -->
     </div>
 
@@ -35,20 +33,52 @@
 
 <script>
 // PART 2 Hint: Add import here!
-
 export default {
   // PART 2 Hint: Add component here!
-
   name: 'IndexPage',
-  data() {
-    return {
-      item: {
-        title1: 'Connect a Youth #HOGC21',
-        title2: 'Connect a youth',
-        description: 'Bringing a youth? Let us know! We’re here to help!',
-        image: '',
-      },
-    }
-  },
 }
 </script>
+
+<style scoped>
+.top-banner {
+  display: flex;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #ffe543;
+  --tw-gradient-to: #ffcd19;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  padding: 28px; /* 1.75rem */
+  padding-left: 40px; /* 2.5rem */
+  margin-bottom: 28px; /* 1.75rem */
+}
+
+.logo {
+  margin-right: 20px; /* 1.25rem */
+}
+
+.banner-title {
+  font-size: 24px; /* 1.5rem */
+  line-height: 32px; /* 2rem */
+  font-weight: 700;
+}
+
+.title {
+  font-size: 30px; /* 1.875rem */
+  line-height: 36px; /* 2.25rem */
+  margin: 40px; /* 2.5rem */
+  margin-bottom: 20px; /* 1.25rem */
+  font-weight: 700;
+}
+
+.desc {
+  margin-left: 40px; /* 2.5rem */
+  margin-right: 40px; /* 2.5rem */
+  margin-bottom: 24px; /* 1.5rem */
+}
+
+.cards-container {
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+</style>
