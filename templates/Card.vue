@@ -1,19 +1,19 @@
 <template>
   <div>
     <div class="card">
-      <!-- #################################################################### -->
-      <!-- ###           PART 2: HINT.. Fill in the empty headers           ### -->
-      <!-- ###            and paragraph with the prop attributes            ### -->
-      <!-- #################################################################### -->
+      <!-- ################################################################ -->
+      <!-- ###       PART 2: HINT.. Fill in the empty "top-title"       ### -->
+      <!-- ###       and "bottom-title" with the prop attributes        ### -->
+      <!-- ################################################################ -->
       <div class="top-section">
         <div class="top-title"></div>
       </div>
 
-      <!-- ############# PART 3: HINT.. You'll need this! ############# -->
+      <!-- #############    PART 3: HINT.. You'll need this!    ############# -->
       <!-- <div class="image-container">
-        <img class="image" :src="require(`~/assets/images/${image}.png`)" />
+        <img class="image" :src="require(`~/assets/images/${item.image}.png`)" />
       </div> -->
-      <!-- ############################################################ -->
+      <!-- ################################################################## -->
 
       <div class="bottom-section">
         <h3 class="bottom-title"></h3>
@@ -28,6 +28,7 @@
 export default {
   name: 'CardComponent',
   // PART 2 Hint: Add props here!
+
 }
 </script>
 

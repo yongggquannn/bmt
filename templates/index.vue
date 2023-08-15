@@ -32,10 +32,23 @@
 </template>
 
 <script>
-// PART 2 Hint: Add import here!
+// PART 2 Hint: Add import statement here!
+
 export default {
-  // PART 2 Hint: Add component here!
   name: 'IndexPage',
+  // PART 2 Hint: Add component here!
+
+
+  data(){  // data to be used in components
+    return {
+      item: {
+        title1: 'CONNECT A YOUTH #HOGC21',
+        title2: 'Connect a youth',
+        description: 'Bringing a youth? Let us know! We’re here to help!',
+        image: '',
+      },
+    }
+  }
 }
 </script>
 
