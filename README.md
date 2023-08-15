@@ -1,4 +1,19 @@
-# bmt
+# BMT
+
+## Installing Node.js & yarn
+```bash
+# install Node: go to https://nodejs.org/en/download
+
+# verify Node and npm are installed in terminal
+$ node -v
+$ npm -v
+
+# install yarn
+$ npm install --global yarn
+
+# verify yarn is installed in terminal
+$ yarn -v
+```
 
 ## Build Setup
 
@@ -6,7 +21,7 @@
 # install dependencies
 $ yarn install
 
-# serve with hot reload at localhost:3000
+# serve with hot reload at localhost:3000 (use this for this BMT!)
 $ yarn dev
 
 # build for production and launch server
