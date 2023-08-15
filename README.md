@@ -1,9 +1,10 @@
 # BMT
 
 ## Installing Node.js & yarn
-```bash
-# install Node: go to https://nodejs.org/en/download
 
+To install Node: go to [Node.js website](https://nodejs.org/en/download).
+
+```bash
 # verify Node and npm are installed in terminal
 $ node -v
 $ npm -v
