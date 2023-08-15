@@ -1,10 +1,11 @@
 <template>
   <div>
     <div class="top-banner">
-      <!-- ############# PART 1: PROJ STRUCTURE!! ############## -->
-      <!-- ###      Add in HOGC Logo into assets folder,     ### -->
-      <!-- ###      and add the file path in the img tag     ### -->
-      <!-- ##################################################### -->
+      <!-- ############# PART 1: PROJ STRUCTURE!! ############### -->
+      <!-- ###         Uncomment the img tag below and        ### -->
+      <!-- ###         add the file path for the logo.        ### -->
+      <!-- ###           Hint: Start with ~/assets/           ### -->
+      <!-- ###################################################### -->
 
       <!-- <img class="logo" src="??" /> -->
 
@@ -15,31 +16,31 @@
       Stay in the know on the latest happenings & buzz in church!
     </p>
 
-    <!-- ############# PART 2: PROPS & DATA!! ############## -->
-    <!-- ###   Create your card using the 'item' below   ### -->
-    <!-- ###   Use the given CSS or create your own :)   ### -->
-    <!-- ################################################### -->
+    <!-- ############# (Fill in Attributes) PART 2: PROPS & DATA!! ############## -->
+    <!-- ###               Create your card using 'item' below                ### -->
+    <!-- ###              Use the given CSS or create your own :)             ### -->
+    <!-- ######################################################################## -->
 
     <div class="cards-container">
       <!-- Add Card component here!  -->
     </div>
 
-    <!-- ############# PART 3: VUE DIRECTIVES!! ############## -->
-    <!-- ###          Edit your Card component to          ### -->
-    <!-- ###      create a list of cards using 'items'     ### -->
-    <!-- ##################################################### -->
+    <!-- #############    PART 3: VUE DIRECTIVES!!    ############## -->
+    <!-- ###          Edit your Card component above to          ### -->
+    <!-- ###         create a list of cards using 'items'        ### -->
+    <!-- ########################################################### -->
   </div>
 </template>
 
 <script>
-// PART 2 Hint: Add import statement here!
+// (Setup for Component) PART 2 Hint: Add import statement here!
 
 export default {
   name: 'IndexPage',
-  // PART 2 Hint: Add component here!
+  // (Setup for Component) PART 2 Hint: Add component here!
 
-
-  data(){  // data to be used in components
+  data() {
+    // data to be used in components
     return {
       item: {
         title1: 'CONNECT A YOUTH #HOGC21',
@@ -48,7 +49,7 @@ export default {
         image: '',
       },
     }
-  }
+  },
 }
 </script>
 

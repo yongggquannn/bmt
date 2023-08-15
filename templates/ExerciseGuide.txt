@@ -41,19 +41,23 @@ clarification or when you're stuck on an exercise.
 --------------------------------------------------------------------------------
 
 Setup for Component
-(1) We'll need to import Card.vue into index.vue
-(2) We'll need to call the component in the 'export default' script
-    - Add in 'components: { ... }' to declare your component
+(a) We'll need to import Card.vue into index.vue
+    - E.g. import Button from '@/components/Button.vue'
 
-Fill in Component with attributes
-(1) The data for the component are already coded in for you, refer to 'item' in index.vue
-(2) How would you bind 'item' to your component?
-    - E.g. <Button item="item"/>
+(b) We'll need to call the component in the 'export default' script
+    - Add in 'components: { ... }' to declare your component
+    - E.g. to use Button component: <Button/>
+
+Fill in Attributes
+(a) The data for the component are already coded in for you, refer to 'item' in index.vue
+(b) How would you bind 'item' to your component?
+    - E.g. <Button :item="item"/>
 
 Receiving data as props in Component
-(1) Component will receive 'item' data as an object
-(2) How would you access and call the prop attributes?
-    - Add in 'props: { ... }'
+(a) Component will receive 'item' data as an object
+    - Add in 'props: { item: Object }'
+
+(b) How would you access and call the prop attributes?
     - E.g. <h2>{{ item.title }}</h2>
 
 ##########################################################################################
@@ -67,7 +71,8 @@ Receiving data as props in Component
 --------------------------------------------------------------------------------
 
 Data setup for multiple cards 
-- Refer to items.txt in 'templates'. You'll need to copy this into index.vue, below 'item'
+- Refer to items.txt in 'templates'
+- You'll need to copy 'items' into index.vue, below 'item'
 *Note: Unlike 'item' which is a single object, 'items' is an array of objects instead
 
 (1) Which Vue Directive allows ITERATION in an array?
