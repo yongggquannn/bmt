@@ -6,19 +6,27 @@
       <!-- ###       "bottom-title" and "desc" with the prop attributes        ### -->
       <!-- ####################################################################### -->
       <div class="top-section">
-        <h2 class="top-title"></h2>
+        <div v-if="item.image" class="image-container">
+          <img class="image" :src="require(`~/assets/images/${item.image}.png`)">
+        </div>
+        <h2 v-else class="top-title">
+          {{ item.title1 }}
+        </h2>
       </div>
 
       <!-- #############    PART 3 HINT: Uncomment the div below    ############# -->
-      <!-- <div class="image-container">
-        <img class="image" :src="require(`~/assets/images/${item.image}.png`)" />
-      </div> -->
       <!-- ###################################################################### -->
 
       <div class="bottom-section">
-        <h3 class="bottom-title"></h3>
-        <p class="desc"></p>
-        <button class="button">Find out more</button>
+        <h3 class="bottom-title">
+          {{ item.title2 }}
+        </h3>
+        <p class="desc">
+          {{ item.description }}
+        </p>
+        <button class="button">
+          Find out more
+        </button>
       </div>
     </div>
   </div>
@@ -28,6 +36,7 @@
 export default {
   name: 'CardComponent',
   // PART 2 Hint: Add props here!
+  props: { item: Object },
 }
 </script>
 
@@ -38,6 +47,7 @@ export default {
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
     0 8px 10px -6px rgb(0 0 0 / 0.1);
   border-radius: 12px; /* 0.75rem */
+  margin-bottom: 16px;
   overflow: hidden;
 }
 

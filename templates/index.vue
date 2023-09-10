@@ -9,9 +9,13 @@
 
       <!-- <img class="logo" src="??" /> -->
 
-      <h3 class="banner-title">HOGC One</h3>
+      <h3 class="banner-title">
+        HOGC One
+      </h3>
     </div>
-    <h1 class="title">Happenings</h1>
+    <h1 class="title">
+      Happenings
+    </h1>
     <p class="desc">
       Stay in the know on the latest happenings & buzz in church!
     </p>
@@ -92,7 +96,7 @@ export default {
 .cards-container {
   max-width: 1440px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: start;
+  flex-direction: row;
 }
 </style>
